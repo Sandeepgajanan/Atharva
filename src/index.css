@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "ff";
+  src: url("/FoundersGrotesk-Semibold.ttf");
+}
+
+@layer components {
+  .heading {
+    @apply bg-clip-text text-transparent bg-gradient-to-b from-gray-200 via-gray-500 to-gray-800;
+  }
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-red-500 via-orange-500 to-amber-400;
+  }
+  .back {
+    @apply bg-gradient-to-br from-zinc-950 to-zinc-900;
+  }
+  .loadercolor {
+    @apply bg-clip-text text-transparent bg-gradient-to-b from-yellow-200 via-amber-500 to-orange-700;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: rgba(0, 0, 0, 0.877);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #007b7f;
+  border-radius: 10px;
+}
